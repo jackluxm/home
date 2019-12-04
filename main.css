@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+html,body,
+p,ul,ol,li,
+td,th,dl,dt,
+blockquote,
+h1,h2,h3,h4,h5	{color:#000; font-family:verdana,helvetica,arial,sans-serif;}
+
+/* ------- form element treatments ------- */
+form	{margin:0; padding:0;}
+
+table { 
+	border-collapse:collapse;
+}
+table th,table td {border:solid #4682B4;border-width:1px 1px 1px 1px;padding:2px;}
+table tr.odd {
+background-color: #f7f7f7;
+}
+table tr.even {
+background-color: #fff;
+}
+
+table tr:hover {
+background-color: #9cf;
+}
+table tbody tr:hover td {
+color: black;
+}
+
+A:link {text-decoration: none; color:#039;}
+A:visited {text-decoration: none; color: #039}
+A:active {text-decoration: none}
+/* A:hover {text-decoration: underline; color: #FF8426;} */
+A:hover	{color:#69c; text-decoration:underline; }
+
+input:focus {background: WhiteSmoke;}
+
+
+* {
+padding: 0;
+margin: 0;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ul li {
+float: left;
+margin: 0;
+padding: 0;
+}
+
+ul li a {
+	display: block;
+	width: 7em;
+	text-align: center;
+}
+
+ul li a:hover {
+	background-color: #fc6;
+	color:black;
+	text-decoration: none;
+}
+

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Home</title>
+	<meta http-equiv=content-type content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<br>
+<div align="center">
+<a href="http://www.google.com/ncr"><img alt="Google" height=110 src="logo.gif" width=276 ></a><br>
+<form action="http://www.google.com/search" name="f">
+      	<input name="hl" value="en" type="hidden">
+      	<input name="q" size="45" value="">
+      	<input name="btnG" value="Search" type="submit">
+</form>
+</div>
+<Br><br>
+<div align='center'>
+<table>
+    <tr class="odd">
+      <td colspan=2 align='center'>
+      <form action="http://en.wikipedia.org/w/index.php">
+      	WikiPedia
+      	<input name="title" value="Special:Search" type="hidden">
+      	<input name="search" size="30" accesskey="f" value="" type="text">
+      	<input name="go" class="searchButton" id="searchGoButton" value="Search" type="submit">
+      </form>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>Search</td>
+      <td>     
+      	<ul> 
+      		<li><a href="http://www.baidu.com" target="_blank">Baidu</a></li>
+      		<li><a href="http://www.google.com.hk" target="_blank">Google中文</a></li>
+      		<li><a href="http://www.yahoo.com" target="_blank">Yahoo</a></li>
+					<li><a href="http://www.bing.com" target="_blank">Bing</a></li>
+				</ul>
+      </td>
+    </tr>
+    <tr class='odd'>
+    	<td>IBM</td>
+    	<td>
+    		<ul>
+    			<li><a href="http://www.ibm.com/us/en/" target="_blank">IBM</a></li>
+    			<li><a href="http://w3.ibm.com" target="_blank">W3</a></li>
+    			<li><a href="http://w3.ibm.com/jct03019wt/bluepages/searchByName.wss?uid=900330672&task=viewrecord" target="_blank">BluePage</a></li>
+    			<li><a href="http://w4.ibm.com/teamanalytics/ta.pl" target="_blank">TeamAnalytics</a></li>
+    		</ul>
+    	</td>
+    </tr>
+    <tr class="even">
+    	<td>IBM</td>
+    	<td>
+    		<ul>
+    			<li><a href="http://9.11.100.134/" target="_blank">BlueVista</a></li>
+    			<li><a href="http://9.123.251.17/BlueCalendar/web/login.php" target="_blank">BlueCalendar</a></li>
+    			<li><a href="http://w3.ospf.cn.ibm.com/wps/portal" target="_blank">MeetingRoom</a></li>
+    			<li><a href="https://oslrqm:9443/qm/" target="_blank">RQM</a></li></li>
+
+    		</ul>
+    	</td>
+    </tr>
+
+    <tr class="odd">
+    	<td>IBM</td>
+    	<td>
+    		<ul>
+    			<li><a href="https://scores.boulder.ibm.com/webapp/snicrs/int/reg/tester/queue.do" target="_blank">SCORE</a></li>
+    			<li><a href="https://w3-03.ibm.com/services/gbs/webretain/DispatcherServlet?oper=retainweb" target="_blank">PMR</a></li>
+    			<li><a href="http://www.ibm.com/systems/support/storage/ssic" target="_blank">SSIC</a></li>
+    			<li><a href="https://epipe.rchland.ibm.com/EpipeWeb/" target="_blank">epipeline</a></li>
+    			
+    		</ul>
+    	</td>
+    </tr>
+            <tr class='even'>
+    	<td>IBM</td>
+    	<td>
+    		<ul>
+    			<li><a href="https://w3.ibm.com/tools/expenses/CN-IBM_englaunch.shtml">WWER</a></li>
+    			<li><a href="http://w3.ibm.com/hr/hrms" target="_blank">HRMS</a></li>
+    			<li><a href="http://faces.tap.ibm.com/" target="_blank">Faces</li>
+    		</ul>
+    	</td>
+    </tr>
+        <tr class='odd'>
+    	<td></td>
+			<td><ul>-
+			</ul></td>
+    </tr>
+    <tr class="even">
+    	<td>News</td>
+    	<td>
+    		<ul>
+    			<li><a href="http://news.sina.com.cn" target="_blank">Sina</a></li>
+    			<li><a href="http://news.google.com.hk" target="_blank">GoogleCN</a></li>
+    			<li><a href="http://news.baidu.com" target="_blank">BaiDu</a></li>
+    			<li><a href="http://news.google.com" target="_blank">Google</a></li>
+    		</ul>
+    	</td>
+    </tr>
+    <tr class='odd'>
+    	<td>Tech</td>
+    	<td>
+    		<ul>
+    			<li><a href="http://www.csdn.net" target="_blank">CSDN</a></li>
+    			<li><a href="http://www.zol.com.cn" target="_blank">ZOL</a></li>
+    			<li><a href="http://www.linuxeden.com" target="_blank">Linuxeden</a></li>
+    			<li><a href="http://www.stor-age.com" target="_blank">Stor-age</a></li>
+    		</ul>    		
+    	</td>
+    </tr>
+    <tr class="even">
+    	<td>Map</td>
+    	<td>
+    		<ul>
+    			<li><a href="http://map.baidu.com" target="_blank">BaiDu Map</a></li>
+    			<li><a href="http://maps.google.com" target="_blank">Google Map</a></li>
+    		</ul>
+    	</td>
+    </tr>
+    <tr class='odd'>
+    	<td>Other</td>
+    	<td>
+    		<ul>
+
+    			<li><a href="http://php.weather.sina.com.cn/search.php?city=shanghai&f=1&dpc=1" target="_blank">Weather</a></li>
+    			<li><a href="http://sh.soufun.com" target="_blank">SouFun</a></li>
+    			<li><a href="http://www.anjuke.com/" target="_blank">AnJuKe</a></li>
+    			<li><a href="http://www.yankanshu.com" target="_blank">Reader</a></li>
+    			
+    		</ul>    		
+    	</td>
+    </tr>
+    <tr class='even'>
+    	<td></td>
+    	<td>
+    		<ul>
+    			<li><a href="http://www.bbc.co.uk/iplayer/radio/bbc_world_service"  target="_blank">BBC</a></li>
+    			<li><a href="http://www.cnn.com/audio/radio/winmedia.html"  target="_blank">CNN</a></li>
+				<li><a href="http://www.putclub.com"  target="_blank">PutClub</a></li>
+				<li><a href="http://www.infzm.com/"  target="_blank">infzm</a></li>
+				
+    		</ul>
+	</td>
+    </tr>
+    <tr class='odd'>
+	    <td></td>
+	    <td>
+		    <ul>
+			    <li><a href="http://www.amazon.cn" target="_blank">amazon</a></li>
+				<li><a href="http://www.newegg.com.cn" target="_blank">NewEgg</a></li>
+				<li><a href="http://www.dangdang.com" target="_blank">dangdang</a></li>
+			    <li><a href="http://www.jd.com/" target="_blank">JD</a></li>
+		</ul>
+	    </td>
+    </tr>
+	   <tr class='even'>
+	    <td></td>
+	    <td>
+		    <ul>
+			    <li><a href="http://www.8080.net" target="_blank">8080</a></li>
+				<li><a href="http://www.taobao.com.cn" target="_blank">TaoBao</a></li>
+				<li><a href="http://www.ouku.com" target="_blank">Ouku</a></li>
+			    <li><a href="http://bbs.nju.edu.cn" target="_blank">LilyBBS</a></li>
+		</ul>
+	    </td>
+    </tr>
+    <tr class='odd'>
+	    <td></td>
+	    <td>
+		    <ul>
+			    <li><a href="http://www.smzdm.com/" target="_blank">smzdm</a></li>
+				<li><a href="http://www.box-z.com/" target="_blank">box-z</a></li>
+				
+    			<li><a href="http://weibo.com" target="_blank">Sina Weibo</a></li>
+    			<li><a href="http://www.timeanddate.com/worldclock/personal.html" target="_blank">WorldClock</a></li>
+				</ul>
+	    </td>
+    </tr>
+    
+    	   <tr class='even'>
+	    <td></td>
+	    <td>
+		    <ul>
+			    <li><a href="http://www.12306.cn" target="_blank">12306</a></li>
+				<li><a href="http://www.taobao.com.cn" target="_blank"></a></li>
+				<li><a href="http://www.ouku.com" target="_blank"></a></li>
+			    <li><a href="http://bbs.nju.edu.cn" target="_blank"></a></li>
+		</ul>
+	    </td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>
