@@ -6,40 +6,10 @@
 	<meta http-equiv=content-type content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	<Script>
-		function openNewWindow(defectID) {
-			s = "http://rastool.tuc.stglabs.ibm.com/cgi-bin/viewAnyDefect/mcView?entity=";
-			s += defectID;
-			s += "+family=mc+type=defect";
-			//alert(s);
-			window.open(s);
-		};
 		String.prototype.trim = function () {
 			return this.replace(/(^\s*)|(\s*$)/g, '');
 		}
-		function myAct() {
-			s = document.getElementById("defectID").value.trim();
 
-			t = s.split(",");
-			//alert(t.length);
-			for (var i = 0; i < t.length; i++) {
-				//alert(t[i]);
-				openNewWindow(t[i]);
-			}
-			return false;
-		}
-		function jumpTo(currentField, nextField) {
-			max = currentField.getAttribute("maxlength");
-			if (currentField.value.length > (max - 1)) {
-				nextField.focus();
-			}
-		}
-		function splitPMR() {
-			PMR_Number = document.getElementById("pmr_no").value;
-			pmr = PMR_Number.split(",");
-			document.getElementById("pmrnumber").value = pmr[0];
-			document.getElementById("branch").value = pmr[1];
-			document.getElementById("country").value = pmr[2];
-		}
 		function mybaidu() {
 			s = document.getElementById("baiduwd").value.trim();
 			s = "https://www.baidu.com/s?ie=UTF-8&wd=" + s;
@@ -84,38 +54,6 @@
 					</form>
 				</td>
 			</tr>
-			<tr class="even">
-				<td>MC Defect</td>
-				<td>
-					<form id="mcform" action="http://rastool.tuc.stglabs.ibm.com/cgi-bin/viewAnyDefect/mcView"
-						onsubmit="return myAct()">
-						<input id="defectID" name="entity" size="30" accesskey="f" value="" type="text">
-						<input name="search" class="searchButton" value="Search" type="submit">
-					</form>
-				</td>
-			</tr>
-			<tr class='odd'>
-				<td>PMR
-				</td>
-				<td>
-					<form name="pmrBrowse" method="post"
-						action="https://w3-03.ibm.com/services/gbs/webretain/DispatcherServlet" target="_blank"
-						onsubmit="splitPMR()">
-						<input type="hidden" name="oper" value="pmrDisplay">
-						<input "text" name="pmr_no" id="pmr_no" value="" maxlength="13" size="19">
-						<input type='hidden' name="pmrnumber" id="pmrnumber" value="" maxlength="5"
-							onKeyUp="jumpTo(this, document.pmrBrowse.branch);">
-						<input type='hidden' name="branch" id="branch" value="" maxlength="3"
-							onKeyUp="jumpTo(this, document.pmrBrowse.country);">
-						<input type='hidden' name="country" id="country" value="" maxlength="3">
-						<select name='type' id='type'>
-							<option selected value='Software'>Software</option>
-							<option value='Hardware'>Hardware</option>
-						</select>
-						<input type="submit" name="browsePMR" value="Search">
-					</form>
-				</td>
-			</tr>
 
 			<tr class='odd'>
 				<td></td>
@@ -131,94 +69,11 @@
 						<li><a href="http://www.baidu.com" target="_blank">Baidu</a></li>
 						<li><a href="http://www.yahoo.com" target="_blank">Yahoo</a></li>
 						<li><a href="http://www.bing.com" target="_blank">Bing</a></li>
-						<li></li>
-					</ul>
-				</td>
-			</tr>
-			<tr class="odd">
-				<td>Bluepage Search</td>
-				<td>
-					<ul>
-						<li><a href="https://pages.github.ibm.com/blackops/flashlist/" target="_blank">flashlist</a></li>
-						<li><a href="http://w4.ibm.com/teamanalytics/ta.pl" target="_blank">OldTA</a></li>
-						<li><a href="https://team-analytics.w3ibm.mybluemix.net" target="_blank"/>NewTA</a></li>
-						<li><a href="http://9.11.81.21:8080/TeamAnalysis/" target="_blank">TeamAnalysis</a></li>
-					</ul>
-				</td>
-			</tr>
-			<tr class='even'>
-				<td></td>
-				<td>
-					<ul>
-					</ul>
-				</td>
-			</tr>
-			<tr class='odd'>
-				<td>IBM</td>
-				<td>
-					<ul>
-						<li><a href="http://w3.ibm.com" target="_blank">W3</a></li>
-						<li><a href="https://w3.ibm.com/bluepages/" target="_blank">BluePage</a></li>
-						<li></li>
-						<li></li>
-						
-					</ul>
-				</td>
-			</tr>
-			<tr class="even">
-				<td>IBM</td>
-				<td>
-					<ul>
-						<li><a href="http://9.11.100.134/" target="_blank">BlueVista</a></li>
-						<li><a href="http://w3.ospf.cn.ibm.com/wps/portal" target="_blank">MeetingRoom</a></li>
-						<li><a href="http://w3.ibm.com/hr/web/performance/checkpointtracker"
-								target="_blank">CheckPoint</a></li>
-						<li><a href="https://w3-03.ibm.com/systems/epipeline/EpipeWeb/" target="_blank">epipeline</a>
-						</li>
+						<li><a href="" target="_blank"></a></li>
 					</ul>
 				</td>
 			</tr>
 
-			<tr class="odd">
-				<td>IBM</td>
-				<td>
-					<ul>
-						<li><a href="https://www-03.ibm.com/systems/support/storage/scorerpq/int/logon.do"
-								target="_blank">SCORE</a></li>
-						<li><a href="http://www.ibm.com/systems/support/storage/ssic" target="_blank">SSIC</a></li>
-						<li><a href="http://iprod.tucson.ibm.com/systems/support/storage/ssic/interoperability.wss"
-								target="_blank">SSIC Internal</a></li>
-						<li><a href="https://w3-03.ibm.com/services/gbs/webretain/DispatcherServlet?oper=retainweb"
-								target="_blank">PMR</a></li>
-
-
-					</ul>
-				</td>
-			</tr>
-			<tr class='even'>
-				<td>IBM</td>
-				<td>
-					<ul>
-						<li><a href="http://ibm.slack.com" target="_blank">Slack</a></li>
-						<li><a href="https://github.ibm.com/" target="_blank">Github</a></li>
-
-						<li><a href="http://w3.ibm.com/hr/hrms" target="_blank">HRMS</a></li>
-						<li><a href="https://w3.ibm.com/travel/" target="_blank">Travel</a></li>
-					</ul>
-				</td>
-			</tr>
-			</tr>
-			<tr class='odd'>
-				<td>IBM</td>
-				<td>
-					<ul>
-						<li><a href="https://mail.notes.na.collabserv.com/verse" target="_blank">Verse</a></li>
-						<li><a href="https://wd5.myworkday.com/ibm/d/home.htmld" target="_blank">WorkDay</a></li>
-						<li><a href="http://ibm.ent.box.com" target="_blank">Box</a></li>
-						<li><a href="https://ibm.webex.com/" target="_blank">webex</a></li>
-					</ul>
-				</td>
-			</tr>
 			<tr class='odd'>
 				<td></td>
 				<td>
